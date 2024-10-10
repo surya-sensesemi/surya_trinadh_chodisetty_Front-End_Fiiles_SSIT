@@ -1,0 +1,26 @@
+body{
+    background-color: aqua; 
+ }
+ h1{
+    font-size: 48px;
+    color: chocolate;
+    border: 2px solid green;
+ }
+ .first-class{
+    border-radius: 2px solid grey;
+    background-color: beige;
+    font-size: 24px;
+ }
+ #first-id{
+    background-color: azure;
+    width: 100px;
+    height: 25px;
+ }
+ #first-id a{
+    text-decoration: none;
+    color: darkblue;
+ }
+
+ #first-id a:hover{
+    color: red  ;
+ }

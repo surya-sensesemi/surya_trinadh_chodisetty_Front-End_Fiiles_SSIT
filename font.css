@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
+
+.normal h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.google-fonts p{
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.google-fonts .second-p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}

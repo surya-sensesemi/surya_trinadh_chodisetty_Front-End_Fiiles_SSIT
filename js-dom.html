@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DOM</title>
+    <style>
+        .first-class {
+            color: red;
+        }
+        .first-id {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="first-class">My Name is Surya Trinadh</h1>
+    <h2 id="first-id">I'm a Chief Operating Officer at SSIT</h2>
+
+    <script>
+        // Correcting getElementsByClassName to access the first element
+        document.getElementsByClassName('first-class')[0].innerHTML = "My Name is Surya Trinadh Chodisetty";
+
+        // Assigning innerHTML correctly
+        let obj2 = document.getElementById('first-id');  // Get the element first
+        obj2.innerHTML = "My Name is Surya Trinadh Chodisetty";  // Then modify the innerHTML
+
+        // Remove the element
+        obj2.remove();
+
+        // Creating a new element and appending it to the body
+        let newElement = document.createElement('div');
+        newElement.textContent = 'NewElement';
+        document.body.appendChild(newElement);
+    </script>
+</body>
+</html>
+  

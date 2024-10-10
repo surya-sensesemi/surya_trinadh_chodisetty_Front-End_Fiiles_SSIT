@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: azure;
+            }
+            form{
+                width: 400px;
+                background-color: beige;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            fieldset{
+                border: 1px solid grey;
+                padding: 10px;
+                margin: 0;
+            }
+            legend{
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            label{
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type="text"],input[type="email"],textarea,input[type="date"],input[type="number"]{
+                width: calc(100%-20px);
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid grey;
+                border-radius: 5px;
+            }
+            input[type="radio"]{
+                margin-left: 20px;
+            }
+            select{
+                width: calc(100%-20px);
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid grey;
+                border-radius: 5px; 
+            }
+            input[type="submit"]{
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Resgistration Form</legend>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your Full Name" required>
+                <label>Email ID</label>
+                <input type="email" placeholder="Enter your email id" required>
+                <label>Date of Birth</label>
+                <input type="date" placeholder="dd/mm/yyyy" required>
+                <label>Mobile Number</label>
+                <input type="number" placeholder="+91 XXXXX XXXXX" required>
+                <label>Gender</label>
+                <input type="radio">Male
+                <input type="radio">Female
+                <input type="radio">Prefer not to say
+                <label>Select your District</label>
+                <select name="District" required>
+                    <option>Srikakulam</option>
+                    <option>Vijayanagaram</option>
+                    <option>Vishakapatnam</option>
+                    <option>East Godavari</option>
+                    <option>West Godavari</option>
+                    <option>Krishna</option>
+                    <option>Guntur</option>
+                    <option>Prakasam</option>
+                    <option>Nellore</option>
+                    <option>Chitoor</option>
+                    <option>Kadapa</option>
+                    <option>Kurnool</option>
+                    <option>Ananthapur</option>
+                </select>
+                <label>Address</label>
+                <textarea placeholder="D.No, Street, Village/Town/City, Mandal, District - Pincode" required></textarea><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>

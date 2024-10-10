@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Prrice Calculation</title>
+</head>
+<body>
+    <script>
+        let numpasng = parseInt(prompt("Enter the no.of passenger:"));
+        let totalPrice = 0;
+        let totalkms = parseInt(prompt("Enter no.of KMS:"));
+        for(let i=1; i<=numpasng; i++){
+            let age = prompt(`Enter the age of Passenger ${i}:`);
+
+            let priceperkm = 3;
+            if(age<=12){
+                priceperkm = 3;
+            }
+            else if(age<=18){
+                priceperkm = 5;
+            }
+            else if(age<=35){
+                priceperkm = 8;
+            }
+            else if(age<=60){
+                priceperkm = 12;
+            }
+            else if(age>60){
+                priceperkm = 6;
+            }
+            else{
+                alert("Please enter a Valid info.");
+            }
+            let pssngprice = priceperkm*totalkms;
+            totalPrice += pssngprice;
+        }
+        alert(`Total Ticket Price: ${totalPrice.toFixed(2)}`);
+    </script>
+</body>
+</html>

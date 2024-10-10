@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let amount = prompt("Enter the amount of your shopping:")
+        
+        if(amount>=500){
+            var discount1 = (5/100)*amount
+            var finalcost1 = amount - discount1
+            document.write("Your purchased amount is =" + amount + "So, you will get the discount of 5%. Total Payable amount = " + finalcost1)
+        }
+        else if(amount>1000){
+             var discount2 = (10/100)*amount
+             var finalcost2 = amount - discount2
+             document.write("Your purchased amount is =" + amount + "So, you will get the discount of 10%. Total Payable amount = " + finalcost2)
+        }
+        // else if(amount>2000){
+        //     var discount3 = (15/100)*amount
+        //     var finalcost3 = amount - discount3
+        //     document.write("Your purchased amount is =" + amount + "So, you will get the discount of 15%. Total Payable amount = " + finalcost3)
+        // }
+        // else if(amount>3000){
+        //     var discount4 = (20/100)*amount
+        //     var finalcost4 = amount - discount4
+        //     document.write("Your purchased amount is =" + amount + "So, you will get the discount of 20%. Total Payable amount = " + finalcost4)
+        // }
+        // else if(amount>=5000){
+        //     var discount5 = (25/100)*amount
+        //     var finalcost5 = amount - discount5
+        //     document.write("Your purchased amount is =" + amount + "So, you will get the discount of 25%. Total Payable amount = " + finalcost5)
+        // }
+        // else if(amount<500){
+        //     var difference = 500 - amount
+        //     document.write("You are not eligible for dicount. To get the discount please shop for ₹" + difference + "More.")
+        // }
+        // else{
+        //     document.write("Invalid Input! Please Tryagain!")
+        // }
+    </script>
+</body>
+</html>

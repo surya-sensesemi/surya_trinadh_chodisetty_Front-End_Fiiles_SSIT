@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - 01</title>
+</head>
+<body>
+    <form >
+        Name : <input type="text" id="name">
+        <input type="submit" onclick="validateform()">
+    </form>
+    <script>
+        function validateform(){
+            const name = document.getElementById('name').value;
+            if (name == ""){
+                alert("Name Must be Filled!");
+                return false
+            }
+            else{
+                alert("Your name has been submitted successfully!")
+            }
+        }
+    </script>
+</body>
+</html>

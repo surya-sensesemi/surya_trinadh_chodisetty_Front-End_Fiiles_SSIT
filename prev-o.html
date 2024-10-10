@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt for number of passengers
+let numPassengers = parseInt(prompt("Enter the number of passengers:"));
+
+let totalPrice = 0;
+let kms = parseFloat(prompt("Enter the number of kilometers for the trip:"));
+
+// Loop through each passenger and prompt for their age
+for (let i = 1; i <= numPassengers; i++) {
+    let age = prompt(`Enter the age of Passenger ${i}:`);
+    age = parseInt(age);
+
+    // Base price per km
+    let pricePerKm = 5;
+
+    // Apply age-based discounts
+    if (age < 5) {
+        pricePerKm = 0; // Free for children under 5
+    } else if (age >= 5 && age <= 12) {
+        pricePerKm = 3; // Discount for children aged 5-12
+    } else if (age >= 60) {
+        pricePerKm = 4; // Discount for senior citizens
+    }
+
+    // Calculate price for this passenger
+    let passengerPrice = pricePerKm * kms;
+    totalPrice += passengerPrice;
+}
+
+// Output the total price
+console.log(`Total Ticket Price: ${totalPrice.toFixed(2)}`);
+alert(`Total Ticket Price: ${totalPrice.toFixed(2)}`);
+
+    </script>
+</body>
+</html>

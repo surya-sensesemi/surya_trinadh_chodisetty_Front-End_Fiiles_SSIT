@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Popups</title>
+</head>
+<body>
+    <script>
+        let username = prompt("Enter your name:");
+        alert("Hello" + username);
+        alert("Warning: You have unsaved changes!")
+        let isconfirmed = confirm("Are you sure you want to logout?")
+        if(isconfirmed){
+            alert("User chosed to logout!")
+        }
+        else{
+            alert("User don't want to logout!")
+        }
+    </script>
+</body>
+</html>

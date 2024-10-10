@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Field</title>
+</head>
+<body>
+    <form>
+        Name: <input type="text" id="name">
+        <input type="submit" onclick="reqfield()">
+    </form>
+    <script>
+        function reqfield(){
+            const name = document.getElementById('name').value;
+            if(!name){
+                alert("This Field is Required")
+            }
+            else{
+                alert('Your form has been submitted')
+            }
+        }
+    </script>
+</body>
+</html>

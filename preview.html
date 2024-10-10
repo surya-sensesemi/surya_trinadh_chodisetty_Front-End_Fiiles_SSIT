@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Cards</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.team-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="team-section">
+        <div class="container">
+            <h1>Meet Our Team</h1>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="images/sudheer.png" alt="Team Member">
+                    <h3>Sudheer Reddy</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/surya.png" alt="Team Member">
+                    <h3>Surya Trinadh Chodisetty</h3>
+                    <p>COO</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/Lokesh.png" alt="Team Member">
+                    <h3>Lokesh Jami</h3>
+                    <p>CMO</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/kumar.png" alt="Team Member">
+                    <h3>Kumar Kasimkota</h3>
+                    <p>CTO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

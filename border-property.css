@@ -1,0 +1,34 @@
+.border-prop{
+    border: 2px solid #b2005f;
+}
+
+.border-prop-1{
+    margin-top: 20px;
+    border: 2px dotted #b2005f;
+}
+
+.border-prop-2{
+    margin-top: 20px;
+    border: 2px dashed #b2005f;
+}
+
+.border-prop-3{
+    margin-top: 20px;
+    border: 20px groove #b2005f;
+}
+
+
+.border-prop-4{
+    margin-top: 20px;
+    border: 20px ridge #b2005f;
+}
+
+.border-prop-5{
+    margin-top: 20px;
+    border: 20px inset #b2005f;
+}
+
+.border-prop-6{
+    margin-top: 20px;
+    border: 20px outset #b2005f;
+}

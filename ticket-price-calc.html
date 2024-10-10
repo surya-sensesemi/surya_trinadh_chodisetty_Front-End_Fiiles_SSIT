@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Ticket Price Calculation</title>
+</head>
+<body>
+    <script>
+        let numofpassng = parseInt(prompt("Enter no.of Passengers"));
+        let totaltktptice = 0;
+
+        for(let i=0; i<=numofpassng; i++){
+            let passngage = parseInt(prompt('Enter the age of passenger ${i + 1}:'));
+
+            let tktprice;
+            if(passngage<=12){
+                tktprice = 10;
+            }
+            else if(passngage<=20){
+                tktprice = 20;
+            }
+            else if(passngage<=35){
+                tktprice = 30;
+            }
+            else if(passngage<=60){
+                tktprice = 40;
+            }
+            else if(passngage>60){
+                tktprice = 20;
+            }
+            else{
+                document.write("Invalid Input!");
+            }
+            totaltktptice += tktprice;
+        }
+    </script>
+</body>
+</html>
